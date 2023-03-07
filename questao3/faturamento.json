@@ -1,0 +1,29 @@
+{
+  "mes": "Janeiro",
+  "dias": [
+    {
+      "dia": "01/01/2023",
+      "faturamento": 1000.0
+    },
+    {
+      "dia": "02/01/2023",
+      "faturamento": 1500.0
+    },
+    {
+      "dia": "03/01/2023",
+      "faturamento": 0.0
+    },
+    {
+      "dia": "04/01/2023",
+      "faturamento": 0.0
+    },
+    {
+      "dia": "05/01/2023",
+      "faturamento": 1100.0
+    },
+    {
+      "dia": "06/01/2023",
+      "faturamento": 900.0
+    }
+  ]
+}
