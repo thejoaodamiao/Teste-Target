@@ -1,4 +1,4 @@
-fetch("questao3/faturamento.json")
+fetch("questao3/dados.json")
   .then((response) => response.json())
   .then((data) => {
     // Aqui, a variável 'data' contém o objeto JSON carregado do arquivo 'faturamento.json'
@@ -6,12 +6,12 @@ fetch("questao3/faturamento.json")
 
     // Acessando o faturamento diário de cada dia do mês
     let faturamentoDiario = [];
-    for (let i = 0; i < data.dias.length; i++) {
-      faturamentoDiario.push(data.dias[i].faturamento);
+    for (let i = 0; i < data.length; i++) {
+      faturamentoDiario.push(data[i].valor);
     }
 
     let faturamentoSemZeros = faturamentoDiario.filter((valor) => valor !== 0);
-    console.log("zero", faturamentoSemZeros);
+
     // Criando variáveis para armazenar o menor e maior faturamento e a soma do faturamento diário
     let menorFaturamento = faturamentoSemZeros[0];
     let maiorFaturamento = faturamentoSemZeros[0];
